@@ -1,0 +1,181 @@
+body {
+  background-image: linear-gradient(to bottom, #2b2b2b, #242323);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+
+  row-gap: none; /* Add this line to set the distance between rows */
+  column-gap: none; /* Optional: You can also add spacing between columns */
+}
+
+.card {
+  margin: 20px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border: none;
+  border-radius: 20px;
+  padding: auto;
+  box-sizing: border-box;
+}
+
+.front {
+  background-color: #232222;
+}
+
+.front:hover {
+box-shadow: 0 0 10px 6px rgba(101, 98, 98, 0.224),
+            inset 0px 5px 8px rgba(194, 188, 188, 0.224),
+            inset 0px -5px 8px rgba(194, 188, 188, 0.224);
+}
+
+.back {
+  background-color: #666565;
+  width: 100%;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 0 12px;
+  font-family: Verdana, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+
+.card.flipped .back {
+  transform: rotateY(0deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+.card:not(.flipped) .back {
+  transform: rotateY(180deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+.card.flipped .front {
+  transform: rotateY(180deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+.card:not(.flipped) .front {
+  transform: rotateY(0deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+
+.card-1 {
+  height: 160px;
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
+}
+
+.card-2 {
+  height: 360px;
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
+}
+
+.title {
+  font-size: 1rem;
+  color: #484242;
+}
+
+.title:hover {
+  color: #3f3939;
+}
+
+.card-2 .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%; 
+  background-color: #2e2d2d; 
+  border-color: none;
+  box-shadow: inset 0 0px 8px #191919;
+  z-index: -1; 
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.card-2 .circle:hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: none;
+  box-shadow: inset 0 0px 14px #181818;
+  z-index: -1; 
+  appearance: none;
+}
+
+.card-3 {
+  height: 360px;
+  grid-row: 1 / 3;
+  grid-column: 3 / 4;
+}
+
+.card-4 {
+  height: 360px;
+  grid-row: 2 / 5;
+  grid-column: 1 / 2;
+}
+
+.card-5 {
+  height: 350px;
+  grid-row: 4 / 6;
+  grid-column: 1 / 2;
+}
+
+.card-6 {
+  height: 160px;
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+
+.card-7 {
+  height: 160px;
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+}
+
+.card-8 {
+  height: 350px;
+  grid-row: 4 / 6;
+  grid-column: 2 / 4;
+}
+
+.column {
+  display: grid;
+
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .card {
+      margin: 10px 0;
+  }
+}
