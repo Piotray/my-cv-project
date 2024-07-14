@@ -2,7 +2,7 @@
 Welcome to My Briefly CV! This web application offers a creative and concise overview of my skills and experiences as a candidate. It's designed to give you a quick and interactive insight into my professional expertise.
 
 ## Introduction
-My Briefly CV is a web application that highlights my key skills, experiences, and other pertinent details about my candidacy. It's designed to be a quick reference that provides potential employers and collaborators with a snapshot of who I am and what I bring to the table.
+[My Briefly CV](https://piotray.github.io/my-cv-project/) is a web application that highlights my key skills, experiences, and other pertinent details about my candidacy. It's designed to be a quick reference that provides potential employers and collaborators with a snapshot of who I am and what I bring to the table.
 
 ## Features
 **Interactive Cards**: Flip through cards to reveal different skills and experiences.
