@@ -6,9 +6,6 @@ body {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(3, 1fr);
-
-  row-gap: none; /* Add this line to set the distance between rows */
-  column-gap: none; /* Optional: You can also add spacing between columns */
 }
 
 .card {
