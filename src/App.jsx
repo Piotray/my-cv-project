@@ -9,7 +9,7 @@ function App() {
     { id: 2, content: 'We all hold many unknowns. Let me shed some light on who I am to clear up any uncertainty. Click the boxes. 👈👇👉'},
     { id: 3, content: 'Python ✌✌'},
     { id: 4, content: 'JavaScript  🤘🤘🤘'},
-    { id: 5, content: 'English (C1), German (A2) 🖐'},
+    { id: 5, content: 'English (C1), German (B1) 🖐'},
     { id: 6, content: 'React🤜🤛' },
     { id: 7, content: 'PostgreSQL👌'},
     { id: 8, content: 'Background: marketing, advertising 😎' }
